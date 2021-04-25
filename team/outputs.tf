@@ -1,7 +1,7 @@
-output "engineers" {
-  value = github_team.engineers-team
+output "engineers-team" {
+  value = github_team.engineers-team.slug
 }
 
-output "admins" {
-  value = github_team.admins-team
+output "admins-team" {
+  value = github_team.admins-team.slug
 }

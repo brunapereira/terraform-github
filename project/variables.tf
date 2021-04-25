@@ -14,12 +14,12 @@ variable "branch" {
   default     = "main"
 }
 
-variable "engineers" {
-  description = "engineer profiles"
-  type        = set(object({ id = number, slug = string }))
+variable "engineers-team" {
+  description = "engineer team slug"
+  type        = string
 }
 
-variable "admins" {
-  description = "admin profiles"
-  type        = set(object({ id = number, slug = string }))
+variable "admins-team" {
+  description = "admin team slug"
+  type        = string
 }
